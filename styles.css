@@ -1,0 +1,189 @@
+.productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  width: 280px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+  background: white;
+}
+
+.producto h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.precios {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.precio-stock {
+  color: green;
+  font-weight: bold;
+}
+
+.precio-pedido {
+  color: gray;
+}
+
+.descripcion {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.producto img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+/* CENTRAR y ESTILIZAR HEADER */
+header {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 2rem; /* MÁS GRANDE */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+/* TÍTULO "Accesorios Apple" MÁS GRANDE */
+.titulo-principal {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 10px 0 30px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+/* BOTÓN WHATSAPP ABAJO A LA IZQUIERDA */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 100;
+}
+
+.whatsapp img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.btn-carrito {
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.slider .slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slider-controles {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+  z-index: 10;
+}
+
+.slider-controles button {
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
