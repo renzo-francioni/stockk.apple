@@ -1,164 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Accesorios Apple</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<body>
-
-  <header>
+<header>
   <nav class="navbar">
     <a href="#">Inicio</a>
-    <a href="#">Productos</a>
+   <a href="#carrito-visual">Ver pedido</a>
   </nav>
 </header>
 
-<h2 class="titulo-principal">Accesorios Apple</h2>
+<div class="titulo-principal-container">
+  <h2 class="titulo-principal">Accesorios Apple</h2>
+</div>
 
 <div class="productos">
   <div class="producto">
-    <h3>AirPods Pro</h3>
+    <h3>airpods pro</h3>
     <div class="precios">
-      <p class="precio-stock">Precio en stock: $34.000</p>
-      <p class="precio-pedido">Precio a pedido: $31.000</p>
+      <p class="precio-stock">Precio en transferencia: $34.000</p>
+      <p class="precio-pedido">Precio en efectivo: $31.000</p>
     </div>
     <p class="descripcion">AirPods Pro 2da gen (2023 y 2024).</p>
-     <div class="slider">
-    <img src="airpords.jpg" alt="AirPods Pro" class="slide active">
-    <img src="airpords2.jpg.jpg" alt="AirPods Pro 2" class="slide">
-    <img src="airpords3.jpg.jpg" alt="AirPods Pro 2" class="slide">
-    <img src="airpords4.jpg.jpg" alt="AirPods Pro 2" class="slide">
-     <div class="slider-controles">
-      <button class="prev">←</button>
-      <button class="next">→</button>
+
+    <label for="pago-airpods-pro">Forma de pago:</label>
+    <select id="pago-airpods-pro" class="tipo-pago">
+      <option value="transferencia">Transferencia</option>
+      <option value="efectivo">Efectivo</option>
+    </select>
+
+    <div class="slider">
+      <img src="airpords.jpg" alt="airpods pro" class="slide active" />
+      <img src="airpords2.jpg.jpg" alt="airpods 2" class="slide" />
+      <img src="airpords3.jpg.jpg" alt="airpods Pro 2" class="slide" />
+      <img src="airpords4.jpg.jpg" alt="airpods Pro 2" class="slide" />
+      <div class="slider-controles">
+        <button class="prev">←</button>
+        <button class="next">→</button>
       </div>
-  </div>
-    <button class="agregar-carrito" data-producto="airpords pro">Agregar al carrito</button>
-  </div>
-
-<div class="producto">
-  <h3>Batería Inalámbrica MagSafe</h3>
-  <div class="precios">
-    <p class="precio-stock">Precio en stock: $32.000</p>
-    <p class="precio-pedido">Precio a pedido: $30.000</p>
-  </div>
-  <p class="descripcion">Carga inalámbrica para iPhone. Se pega atrás y carga.</p>
-  
-  <div class="slider">
-    <img src="baterias inalambricas.jpg.jpg" alt="Batería inalámbrica MagSafe" class="slide active">
-    <img src="bat inalambrica.jpg" alt="Batería inalambrica MagSafe" class="slide">
-    
-    <div class="slider-controles">
-      <button class="prev">←</button>
-      <button class="next">→</button>
     </div>
+
+    <button class="agregar-carrito" data-producto="airpods pro">Agregar al carrito</button>
   </div>
 
-  <button class="agregar-carrito" data-producto="bateria inalambrica">Agregar al carrito</button>
-</div>
+  <div class="producto">
+    <h3>Batería Inalámbrica MagSafe</h3>
+    <div class="precios">
+      <p class="precio-stock">Precio en transferencia: $32.000</p>
+      <p class="precio-pedido">Precio en efectivo: $30.000</p>
+    </div>
+    <p class="descripcion">Carga inalámbrica para iPhone. Se pega atrás y carga.</p>
+
+    <label for="pago-bateria-inalambrica">Forma de pago:</label>
+    <select id="pago-bateria-inalambrica" class="tipo-pago">
+      <option value="transferencia">Transferencia</option>
+      <option value="efectivo">Efectivo</option>
+    </select>
+
+    <div class="slider">
+      <img src="baterias inalambricas.jpg.jpg" alt="Batería inalámbrica MagSafe" class="slide active" />
+      <img src="bat inalambrica.jpg" alt="Batería inalambrica MagSafe" class="slide" />
+      <div class="slider-controles">
+        <button class="prev">←</button>
+        <button class="next">→</button>
+      </div>
+    </div>
+
+    <button class="agregar-carrito" data-producto="bateria inalambrica">Agregar al carrito</button>
+  </div>
 
   <div class="producto">
     <h3>Cargador Completo</h3>
     <div class="precios">
-      <p class="precio-stock">Precio en stock: $22.000</p>
-      <p class="precio-pedido">Precio a pedido: $20.000</p>
+      <p class="precio-stock">Precio en transferencia: $22.000</p>
+      <p class="precio-pedido">Precio en efectivo: $20.000</p>
     </div>
     <p class="descripcion">Incluye adaptador y cable originales.</p>
-    <img src="cargadores completos.jpg" alt="Cargador Completo">
+    <img src="cargadores completos.jpg" alt="Cargador Completo" />
+    
+    <label for="pago-cargador-completo">Forma de pago:</label>
+    <select id="pago-cargador-completo" class="tipo-pago">
+      <option value="transferencia">Transferencia</option>
+      <option value="efectivo">Efectivo</option>
+    </select>
+
     <button class="agregar-carrito" data-producto="cargador completo">Agregar al carrito</button>
-</div>
-
-<div class="producto">
-  <h3>cajita de cargador</h3>
-  <div class="precios">
-    <p class="precio-stock">Precio en stock: $19.000</p>
-    <p class="precio-pedido">Precio a pedido: $16.000</p>
   </div>
-  <p class="descripcion">solo la cajita del cargador.</p>
-  
-    <img src="cajita de cargador.jpg.jpg" alt="cajita de cargador">
-    
-  <button class="agregar-carrito" data-producto="cajita de cargador">Agregar al carrito</button>
-</div>
 
-<div class="producto">
-  <h3>cable tipo lightning</h3>
-  <div class="precios">
-    <p class="precio-stock">Precio en stock: $6.000</p>
-    <p class="precio-pedido">Precio a pedido: $4.000</p>
+  <div class="producto">
+    <h3>cajita de cargador</h3>
+    <div class="precios">
+      <p class="precio-stock">Precio en transferencia: $19.000</p>
+      <p class="precio-pedido">Precio en efectivo: $17.000</p>
+    </div>
+    <p class="descripcion">solo la cajita del cargador.</p>
+
+    <img src="cajita de cargador.jpg.jpg" alt="cajita de cargador" />
+
+    <label for="pago-cajita-cargador">Forma de pago:</label>
+    <select id="pago-cajita-cargador" class="tipo-pago">
+      <option value="transferencia">Transferencia</option>
+      <option value="efectivo">Efectivo</option>
+    </select>
+
+    <button class="agregar-carrito" data-producto="cajita de cargador">Agregar al carrito</button>
   </div>
-  <p class="descripcion">solo el cable.</p>
-  
-    <img src="cable cargador.jpg" alt="cable tipo lightning">
-    
-  <button class="agregar-carrito" data-producto="cable tipo lighting">Agregar al carrito</button>
-</div>
 
-  </div> <!-- cierre de productos -->
+  <div class="producto">
+    <h3>cable tipo lightning</h3>
+    <div class="precios">
+      <p class="precio-stock">Precio efectivo o transferencia: $6.000</p>
+    </div>
+    <p class="descripcion">solo el cable.</p>
+
+    <img src="cable cargador.jpg" alt="cable tipo lightning" />
+
+    <label for="pago-cable-lightning">Forma de pago:</label>
+    <select id="pago-cable-lightning" class="tipo-pago">
+      <option value="transferencia">Transferencia</option>
+      <option value="efectivo">Efectivo</option>
+    </select>
+
+    <button class="agregar-carrito" data-producto="cable tipo lighting">Agregar al carrito</button>
+  </div>
+</div>
 
 <a href="https://wa.me/543472620734" class="whatsapp" target="_blank" aria-label="WhatsApp">
   <img src="whatsapp-icon.png" alt="WhatsApp" />
 </a>
 
-<script>
-  // 🛒 Carrito
-  const carrito = {};
-
-  document.querySelectorAll('.agregar-carrito').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const producto = btn.getAttribute('data-producto');
-      carrito[producto] = (carrito[producto] || 0) + 1;
-      alert(`Agregado: ${producto}`);
-    });
-  });
-
-  function enviarPedido() {
-    if (Object.keys(carrito).length === 0) {
-      alert("El carrito está vacío.");
-      return;
-    }
-
-    let mensaje = "Hola, quiero pedir:%0A";
-    for (let producto in carrito) {
-      mensaje += `- ${producto} (x${carrito[producto]})%0A`;
-    }
-
-    const numero = "543472620734";
-    const url = `https://wa.me/${numero}?text=${mensaje}`;
-    window.open(url, "_blank");
-  }
-
-  // 🎞️ Slider funcional por cada producto
-  document.querySelectorAll('.slider').forEach(slider => {
-    const slides = slider.querySelectorAll('.slide');
-    const prevBtn = slider.querySelector('.prev');
-    const nextBtn = slider.querySelector('.next');
-    let index = 0;
-
-    function showSlide(i) {
-      slides.forEach((slide, idx) => {
-        slide.classList.toggle('active', idx === i);
-      });
-    }
-
-    prevBtn.addEventListener('click', () => {
-      index = (index - 1 + slides.length) % slides.length;
-      showSlide(index);
-    });
-
-    nextBtn.addEventListener('click', () => {
-      index = (index + 1) % slides.length;
-      showSlide(index);
-    });
-  });
-</script>
-
 <!-- Botón para enviar el carrito por WhatsApp -->
 <button onclick="enviarPedido()" class="btn-carrito">🛒 Enviar pedido</button>
+
+<!-- CARRITO CENTRADO ABAJO -->
+<div id="carrito-visual" class="carrito-visual">
+  <h3>🛒 Tu Carrito</h3>
+  <p id="total-carrito"></p>
+  <ul id="lista-carrito"></ul>
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

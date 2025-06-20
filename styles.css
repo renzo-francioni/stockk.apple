@@ -169,21 +169,139 @@ header {
   border-radius: 4px;
   cursor: pointer;
 }
-.productos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+.agregar-carrito {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px; /* Botón ovalado */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+.producto {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); /* Un degradado cálido */
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.producto {
-  flex: 1 1 300px;
-  max-width: 300px;
-  background: #fff;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #ccc;
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+body {
+  background: linear-gradient(-45deg, #89f7fe, #66a6ff, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: fondoAnimado 15s ease infinite;
+}
+
+@keyframes fondoAnimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.titulo-principal {
+  display: inline-block; /* Para que el fondo se ajuste al contenido */
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 30px; /* Borde redondeado como un botón */
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.titulo-principal {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 6px 14px; /* Más chico */
+  border-radius: 30px;
+  font-size: 1.6rem; /* Más chico */
+  font-weight: 600;
+  font-family: sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  margin: 0 auto; /* Centrar inline-block */
+}
+
+/* Centrar el bloque contenedor */
+.titulo-principal-container {
+  text-align: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: #1a1a1a;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background-color: #7d76cf; /* verde WhatsApp */
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #128c7e; /* verde más oscuro al pasar el mouse */
+}
+.carrito-visual {
+  margin: 40px auto;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-family: sans-serif;
+  border: 2px solid #ddd;
+}
+
+.carrito-visual h3 {
+  margin: 0 0 15px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-carrito li {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+#lista-carrito button {
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+#total-carrito {
+  text-align: left;
+  font-weight: bold;
+  margin: 0 0 10px 5px;
+  font-size: 1.2rem;
+  color: #222;
+  min-height: 24px;
+}
+html {
+  scroll-behavior: smooth;
 }
